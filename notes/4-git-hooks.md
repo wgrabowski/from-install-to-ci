@@ -1,3 +1,13 @@
+1. [intro](0-intro.md)
+1. [nvm](1-nvm-managing-node-versions.md)
+1. [npm and dependencies](2-npm-and-dependencies.md)
+1. [linting](3-npm-and-dependencies.md)
+1. [git hooks](4-git-hooks.md)
+1. [Verify PR](5-verify-pr.md)
+1. [CI/CD - what?](6-ci-part-1-what.md)
+1. [CI/CD - how?](7-ci-part-2-how.md)
+1. [summary](8-summary.md)
+
 # 4 - [git-hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 
 > Git has a way to fire off custom scripts when certain important actions occur. There are two groups of these hooks: client-side and server-side. Client-side hooks are triggered by operations such as committing and merging, while server-side hooks run on network operations such as receiving pushed commits. You can use these hooks for all sorts of reasons.

@@ -8,8 +8,10 @@
 1. [CI/CD - how?](7-ci-part-2-how.md)
 1. [summary](8-summary.md)
 
-# From install to CI
+# 8 summary
 
-A few things that every front-end developer can't apart from writing code.
-
-Some tools and techniques that you can use with your team to improve and automate quality checking and build process of your frontend application (regardless of framework).
+1. Get best of tools you already use (npm, git, linters)
+2. Check early for errors
+3. Automate what you can (lint --fix, git hooks, prettier, PR verification, CI/CD)
+4. Don't be afraid to learn new things and tools
+5. Don't leave everyting to DevOps - learn some 'magic' yourself (frontend ops?)
