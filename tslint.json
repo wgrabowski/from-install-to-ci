@@ -1,0 +1,3 @@
+{
+	"extends": "pgs-dev-tslint/tslint.json"
+}

@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"outDir": "dist-legacy",
+		"sourceMap": false,
+		"target": "ES3"
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"**/*.spec.ts"
+	]
+}

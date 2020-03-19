@@ -1,0 +1,35 @@
+/** @define Admiralier */
+html,
+body,
+body * {
+  all: unset;
+  display: block;
+  box-sizing: border-box;
+}
+
+.Admiralizer {
+  display: block;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.Admiralizer-input,
+.Admiralizer-button {
+  padding: 1em;
+  border: 1px solid black;
+  flex: 0 0 50%;
+}
+
+.Admiralizer-output {
+  flex: 0 0 100%;
+  padding: 1em;
+  background: pink;
+
+  &::before {
+    content: 'Witam, Admirale '
+  }
+
+}
