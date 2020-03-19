@@ -23,6 +23,7 @@ pipeline{
 			}
 		}
 
+parallel{
 		stage('lint') {
 			steps {
 				sh 'npm run lint'
@@ -34,6 +35,7 @@ pipeline{
 				sh 'npm run test'
 			}
 		}
+}
 
 		stage('build') {
 			steps {
