@@ -1,6 +1,6 @@
 pipeline{
 	agent any
-
+nodejs(){
 	stages{
 		stage('install dependencies') {
 			steps {
@@ -38,7 +38,7 @@ pipeline{
 			}
 		}
 	}
-
+}
 
 	post{
 			always{
