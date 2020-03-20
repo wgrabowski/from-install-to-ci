@@ -1,11 +1,9 @@
 {
     "*.ts": [
       "tslint --format stylish --fix",
-      "git add",
       "jest --bail --findRelatedTests --runInBand --noStackTrace --silent --forceExit"
     ],
     "*.scss": [
-      "stylelint --fix",
-      "git add"
+      "stylelint --fix"
     ]
 }
