@@ -12,7 +12,7 @@ pipeline{
 				sh 'npm audit --audit-level=high'
 			}
 		}
-stage(){
+stage('verify'){
 parallel{
 		stage('lint') {
 			steps {
