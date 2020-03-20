@@ -8,7 +8,7 @@
 		"stylelint": "stylelint --syntax scss ./src/**/*.scss",
 		"precommit": "lint-staged",
 		"build": "tsc && node-sass src --output dist && cp src/index.html dist",
-		"test": "jest --ci src/index.spec.js --coverage",
+		"test": "jest --ci src/*.spec.ts --coverage",
 		"build:legacy": "tsc --project tsconfig.legacy.json && node-sass src --output dist-legacy && cp src/index.html dist-legacy"
 	},
 	"repository": {
@@ -20,6 +20,7 @@
 	},
 	"homepage": "https://github.com/wgrabowski/from-install-to-ci#readme",
 	"devDependencies": {
+		"@types/jest": "^25.1.4",
 		"eslint": "^6.8.0",
 		"husky": "^4.2.3",
 		"jest": "^25.1.0",
@@ -31,5 +32,8 @@
 		"ts-jest": "^25.2.1",
 		"tslint": "^6.1.0",
 		"typescript": "^3.8.3"
+	},
+	"dependencies": {
+		"jest-junit-reporter": "^1.1.0"
 	}
 }
