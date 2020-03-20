@@ -2,32 +2,35 @@ pipeline{
  	agent any
 	stages{
 		stage('install dependencies') {
-			nodejs('main') {
+
 			steps {
+							nodejs('main') {
 				sh 'npm install'
 			}
 			}
 		}
 
 		stage('audit dependencies') {
-					nodejs('main') {
 			steps {
+							nodejs('main') {
 				sh 'npm audit --audit-level=high'
 			}
 					}
 		}
 
 		stage('lint') {
-					nodejs('main') {
+
 			steps {
+									nodejs('main') {
 				sh 'npm run lint'
 			}
 					}
 		}
 
 		stage('test') {
-					nodejs('main') {
+
 			steps {
+									nodejs('main') {
 				sh 'npm run test'
 				junit 'test-report.xml'
 			}
@@ -35,16 +38,18 @@ pipeline{
 		}
 
 		stage('build') {
-					nodejs('main') {
+
 			steps {
+									nodejs('main') {
 				sh 'npm run build'
 			}
 					}
 		}
 
 		stage('build legacy') {
-					nodejs('main') {
+
 			steps {
+									nodejs('main') {
 				sh 'npm run build:legacy'
 			}
 					}
