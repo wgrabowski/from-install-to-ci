@@ -1,4 +1,3 @@
-/** @define Admiralier */
 html,
 body,
 body * {
@@ -7,6 +6,7 @@ body * {
   box-sizing: border-box;
 }
 
+/** @define Admiralizer */
 .Admiralizer {
   display: block;
   max-width: 600px;
@@ -31,5 +31,4 @@ body * {
   &::before {
     content: 'Witam, Admirale '
   }
-
 }
