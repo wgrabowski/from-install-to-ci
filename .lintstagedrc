@@ -1,5 +1,4 @@
 {
-  "linters": {
     "*.ts": [
       "tslint --format stylish --fix",
       "git add",
@@ -9,5 +8,4 @@
       "stylelint --fix",
       "git add"
     ]
-  }
 }
