@@ -2,7 +2,8 @@
 
 Demo application for [presentation](notes/0-intro.md)
 
-# pre-commit hook
+## Things you can play with:
+### pre-commit hook
 Pre-commit hooks are enable in this repo:
 - To see how they work commit changes in ts and scss files from src.
 - tslint with --fix flag is enabled for ts files
